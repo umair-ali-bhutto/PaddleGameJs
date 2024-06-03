@@ -59,7 +59,7 @@ function gameOver() {
     gameRunning = false;
     gameContainer.style.cursor = 'default';
     gameOverMessage.style.display = 'block';
-    finalScoreDisplay.textContent = score > highScore ? ` Congratulations You Beat The High Score Of ${highScore} by ${highScore - score} Points Your Final Score: ${score}` : `Your Final Score: ${score}`;
+    finalScoreDisplay.textContent = score > highScore ? ` Congratulations You Beat The High Score Of ${highScore} by ${score - highScore} Points Your Final Score: ${score}` : `Your Final Score: ${score}`;
     if (score > highScore) {
         highScore = score;
     }
